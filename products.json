@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name":"Gianelli Exhaust",
+        "price": 300,
+        "image": "image/1.png"
+    },
+    {
+        "id": 2,
+        "name":" 34mm carburetor",
+        "price": 25,
+        "image": "image/2.png"
+    },
+
+    {
+        "id": 3,
+        "name":"Malossi 180cc Kit",
+        "price": 480,
+        "image": "image/3.png"
+    }
+
+]

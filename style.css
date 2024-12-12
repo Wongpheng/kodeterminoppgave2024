@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+svg {
+    width: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 30px 0;
+}
+
+.icon-cart {
+    position: relative;
+}
+
+.icon-cart span {
+    background: red;
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+.listProduct {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.listProduct .item {
+    background: #f1f1f1;
+    text-align: center;
+}
+
+.listProduct .item img {
+    width: 70%;
+}
+
+.listProduct .item h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.listProduct .item .price {
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.listProduct .item button {
+    background: #656565;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+}
+
+.cartTab {
+    width: 400px;
+    background: #3a3a3a;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+body.showCart .cartTab {
+    right: 0;
+}
+
+
+.cartTab h1 {
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+
+
+
+.cartTab button {
+    background: yellow;
+}
+
+.cartTab .close {
+    background: #eee;
+}
+
+.listCart {
+    overflow: auto;
+    flex: 1;
+}
+
+.listCart .item {
+    display: grid;
+    grid-template-columns: 70px auto 50px 1fr;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.listCart .item img {
+    width: 100%;
+}
+
+.listCart .quantity span {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    background: #eee;
+    color: #555;
+    cursor: pointer;
+}
+
+.listCart .quantity span:nth-child(2) {
+    background: transparent;
+    color: #eee;
+    cursor: auto;
+}
+
+.listCart .item:nth-child(even) {
+    background: rgba(164, 164, 164, 0.067);
+}
